@@ -1,3 +1,9 @@
+.reachme {
+  position: absolute;
+  z-index: 3;
+  left: 35px;
+  top: 35px; }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
