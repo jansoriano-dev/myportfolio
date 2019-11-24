@@ -68,6 +68,7 @@
   main {
     align-items: center;
     text-align: left;
+    margin: 0;
     .lg-heading {
       margin-bottom: 1rem;
     }
@@ -83,9 +84,9 @@
     }
   }
   .menu-nav {
-    height: 75vh;
+    height: 70vh;
     transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
+    font-size: 30px;
   }
   .menu-branding {
     height: 25vh;
@@ -110,7 +111,6 @@
 
     grid-template-columns: 1fr;
   }
-
   .projects {
     grid-template-columns: 1fr;
   }
