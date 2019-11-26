@@ -173,14 +173,31 @@ main {
     margin: auto;
     border-radius: 50%;
     border: #46c27c 3px solid; }
+  .about-info .bio-child {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background: #46c27c;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem;
-    padding: 0.5rem;
     background: #0e503a;
     border-bottom: #46c27c 5px solid;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
     border-radius: 6px; }
+    .about-info .bio .child {
+      padding: 0.5rem; }
+  .about-info .job-child {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background: #46c27c;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
   .about-info .job1 {
     grid-area: job1; }
   .about-info .job2 {
@@ -189,10 +206,11 @@ main {
     grid-area: job3; }
   .about-info .job {
     background: #0e503a;
-    padding: 0.5rem;
     border-bottom: #46c27c 5px solid;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
     border-radius: 6px; }
+    .about-info .job .child {
+      padding: 0.5rem; }
 
 .align-center {
   text-align: center; }
@@ -274,12 +292,35 @@ main {
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh;
-    margin-right: 10vh; }
+    margin-top: 10vh; }
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    font-weight: 400; }
+    h1.lg-heading,
+    h2.lg-heading,
+    h3.lg-heading {
+      font-size: 4.7rem; }
+    h1.sm-heading,
+    h2.sm-heading,
+    h3.sm-heading {
+      margin-bottom: 2rem;
+      padding: 0.2rem 1rem;
+      background: rgba(10, 58, 42, 0); }
   main {
+    padding: 2rem;
+    min-height: calc(100vh - 40px);
     align-items: center;
     text-align: left;
     margin: 0; }
+    main .icons {
+      margin-top: 1rem; }
+      main .icons a {
+        padding: 0.4rem; }
+        main .icons a:hover {
+          color: #46c27c;
+          transition: all 0.5s ease-out; }
     main .lg-heading {
       margin-bottom: 1rem; }
   ul.menu-nav,
